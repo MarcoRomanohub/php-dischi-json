@@ -46,6 +46,8 @@
               <h5 class="card-title">{{item.title}}</h5>
               <p class="card-text">{{item.author}}</p>
               <a :href="`disk_detail.php?index=${index}`" class="btn btn-primary">View Details</a>
+              <button @click.stop="removeDisk(index)" class="btn btn-danger mx-2 "><i
+                  class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
 

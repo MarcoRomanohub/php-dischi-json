@@ -37,6 +37,7 @@ $disk = $list[$_GET['index']];
         <h2><?php echo $disk['author'] ?></h2>
         <h4> <?php echo $disk['genre'] ?> </h4>
         <h3><?php echo $disk['year'] ?></h3>
+        <a href="index.html" class="btn btn-primary">Homepage</a>
       </div>
     </div>
 

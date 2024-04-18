@@ -30,6 +30,15 @@ createApp({
         .then(result => {
           this.list = result.data;
         })
+    },
+    removeDisk(index) {
+      const data = new FormData();
+      data.append('indexToDelete', index);
+
+      axios.post(this.apiUrl, data)
+        .then(result => {
+          this.list = result.data;
+        })
     }
   },
   mounted() {
