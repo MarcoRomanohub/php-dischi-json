@@ -29,12 +29,8 @@
 <body>
   <div id="app">
 
-    <!-- <ul class="list-group">
-      <li v-for="(item, index) in list" :key="index" class="list-group-item d-flex justify-content-between ">
-        {{item.title}}</li>
-    </ul> -->
     <div class="container">
-      <div class="row row-cols-3 ">
+      <div class="row row-cols-2 row-cols-lg-3  ">
         <div v-for="(item, index) in list" :key="index" class="col my-4">
 
           <div class="card d-flex flex-column justify-content-center align-items-center text-center mx-auto text-white "
@@ -43,8 +39,7 @@
             <div class="card-body">
               <h5 class="card-title">{{item.title}}</h5>
               <p class="card-text">{{item.author}}</p>
-              <h6 class="card-subtitle mb-2">{{item.year}}</h6>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a :href="`disk_detail.php?index=${index}`" class="btn btn-primary">View Details</a>
             </div>
           </div>
 

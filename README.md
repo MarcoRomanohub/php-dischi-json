@@ -13,3 +13,12 @@ Solo a questo punto sarà utile passare alla lettura della lista da un file JSON
 Al click su un disco, recuperare e mostrare i dati del disco selezionato.
 Vi allego uno screenshot per la grafica e un file json per i dati ma non sono vincolanti.
 La grafica è libera e potete mettere un elenco di dichi a scelta, l’importante che la struttura dei dati sia di questo tipo
+
+**aggiungere un post per l’aggiunta (in modo permanente) di un nuovo disco con tutti i dati ad esso relativo (titolo, url immagine, artista, ecc)**
+
+**aggiungere la possibilità di eliminare un disco in modo permanente**
+
+**BONUS2**
+aggiungere “mi piace”. I dischi con “mi piace” avranno un cuoricino pieno e gli altri vuoto. Al click del cuoricino avviene il toggle del “mi piace”
+
+**(extrabonus)** al click della card linkare a una pagina PHP di dettaglio che riceve in GET l’indice dell’elemento da mostrare e lo stampa in pagina
