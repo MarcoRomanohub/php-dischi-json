@@ -30,6 +30,12 @@
   <div id="app">
 
     <div class="container">
+      <div class="input-group my-3 ">
+        <input v-model.trim="newDisk.title" type="text" class="form-control" placeholder="Disk Title">
+        <input v-model.trim="newDisk.author" type="text" class="form-control" placeholder="Disk Author">
+        <input v-model.trim="newDisk.poster" type="text" class="form-control" placeholder="Disk Poster">
+        <button @click.stop="addNewDisk" class="btn btn-outline-danger " type="button">Invia</button>
+      </div>
       <div class="row row-cols-2 row-cols-lg-3  ">
         <div v-for="(item, index) in list" :key="index" class="col my-4">
 
