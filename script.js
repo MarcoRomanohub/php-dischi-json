@@ -3,7 +3,8 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      apiUrl: 'server.php'
+      apiUrl: 'server.php',
+      list: []
     }
   },
   methods: {
@@ -11,6 +12,7 @@ createApp({
       axios.get(this.apiUrl)
         .then(result => {
           console.log(result.data);
+          this.list = result.data;
         })
     }
   },
